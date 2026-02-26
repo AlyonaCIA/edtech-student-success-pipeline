@@ -1,0 +1,48 @@
+# ==========================================
+# 1. CONFIDENTIAL CASE FILES (NEVER COMMIT)
+# ==========================================
+enkeleksamen_case.md
+data/raw/enkeleksamen_case.db
+
+# ==========================================
+# 2. DATA & MODELS (Ignore all data by default)
+# ==========================================
+data/raw/*
+data/processed/*
+models/*
+# Exception: allow .gitkeep to preserve folder structure in git
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!models/.gitkeep
+
+# Ignore common data formats just in case
+*.csv
+*.parquet
+*.sqlite
+*.db
+
+# ==========================================
+# 3. PYTHON & ENVIRONMENT
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# uv / virtual environments
+.venv/
+venv/
+env/
+.env
+
+# ==========================================
+# 4. JUPYTER NOTEBOOKS
+# ==========================================
+.ipynb_checkpoints/
+jupyter_workspace/
+
+# ==========================================
+# 5. OS SPECIFIC
+# ==========================================
+.DS_Store
+Thumbs.db
